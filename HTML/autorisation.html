@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/autorisation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Tinos&display=swap" rel="stylesheet">
+    <title>Авторизация</title>
+</head>
+<body>
+    <div class="autorisation">
+        <div class = "welcome">
+        <h1>Добро пожаловать</h1>
+        </div>
+        <div class = "autorisation-data">
+            <input type="text" id = "login-input" class="login autorisation-input" placeholder="Имя пользователя">
+            <input type="password" name="password" id="password-input" class="password autorisation-input" placeholder="Пароль">
+            <div class="autorisation-data-buttons">
+                <div class="checkbox">
+                <input type="checkbox" id = "remember-me-checkbox" class = "remember-me-checkbox">
+                <span>Запомнить меня</span>
+                </div>
+                <a id="autorisation-button" onclick="autorisation_check()">Войти</a>  <!-- Проверка введёных данных-->
+                <script src="../src/autorisation.js"></script> <!-- скрипт авторизации пользователя-->
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
