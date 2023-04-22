@@ -8,12 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Tinos&display=swap" rel="stylesheet">
+    <script src="../src/autorisation.js"></script> <!-- скрипт авторизации пользователя-->
     <title>Авторизация</title>
 </head>
 <body>
+    <header>
+        <div class="header-main-space">
+            <h1>Авторизация</h1>
+        </div> 
+    </header>
+    <main>
     <div class="autorisation">
         <div class = "welcome">
-        <h1>Добро пожаловать</h1>
+        <h2>Добро пожаловать</h2>
         </div>
         <div class = "autorisation-data">
             <input type="text" id = "login-input" class="login autorisation-input" placeholder="Имя пользователя">
@@ -24,9 +31,12 @@
                 <span>Запомнить меня</span>
                 </div>
                 <a id="autorisation-button" onclick="autorisation_check()">Войти</a>  <!-- Проверка введёных данных-->
-                <script src="../src/autorisation.js"></script> <!-- скрипт авторизации пользователя-->
             </div>
         </div>
-    </div>   
+    </div>
+    </main>
+    <footer>
+
+    </footer>   
 </body>
 </html>

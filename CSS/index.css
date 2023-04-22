@@ -1,0 +1,108 @@
+
+
+body {
+    margin: 0;
+    background-color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: aliceblue; 
+    justify-content: right;
+    border-radius: 0px 45px 45px 45px;   
+}
+
+header .header-main-space {
+    border-radius: 0px 0px 45px 45px;
+    width: 472px;
+    text-align: center;
+    white-space: nowrap;
+    background-color: white;
+    border: 2px solid rgb(187, 187, 187);
+    border-top: 0px white;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+header .username {
+ padding-left: 3%;
+ padding-right: 3%;
+ padding-top: 30px;
+ background-color: aliceblue;
+ border-radius: 45px 0px 45px 0px;
+ 
+}
+
+header .username span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    background-color: #37BC5F;
+    border-radius: 30px 15px 15px 30px;
+    color: aliceblue;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    border: 1.5px solid rgb(189, 189, 189);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-create {
+    margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 800px;
+        height: 200px;
+        border: 2px solid rgb(187, 187, 187);
+        border-radius: 20px;
+        background-color: white;   
+}
+
+.project-create h3{
+display: flex;
+border-bottom: 2px solid rgb(187, 187, 187) ;
+padding-left: 0px;
+padding-right: 0px;
+width: 100%;
+justify-content: center;
+padding-top: 30px;
+padding-bottom: 30px;
+margin-top: 0;
+font-size: 23px;
+font-weight: bold;
+}
+
+.project-create a {
+    font-size: 18px;
+    padding: 15px;
+    background-color: #37BC5F;
+    border-radius: 15px 15px 15px 15px;
+    color: aliceblue;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    border: 1.5px solid rgb(189, 189, 189);
+    text-decoration: none;
+}
+
+.project-create a:hover {
+    background-color: #11eb11;
+}
+
+.project-create a:active{
+    background-color: #2b974b;
+}
+
+footer {
+    background-color: #37BC5F;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;    
+}
