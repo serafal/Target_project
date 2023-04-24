@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/loading.css">
-    <script src="../src/index.js"></script>
-    <title>Главная</title>
+    <script src="../src/loading.js"></script>
+    <title>Загрузка файлов</title>
 </head>
 <body>
 
@@ -22,14 +22,20 @@
         <form class="loading-files">
             <h3>Пожалуйста, загрузите файлы: История покупок; Каталог товаров.</h3>
             <div class="loading-buttons">
-                <button>
-                    <input type="file" id = 'purchase-history'>
-                </button>
-                <button>
-                    <input type="file" id = 'зroduct-catalog'>
-                </button>
+                <div>
+                    <button>
+                        <input type="file" id = 'purchase-history'>
+                    </button>
+                    <span>История покупок</span>
+                </div>
+                <div>
+                    <button>
+                        <input type="file" id = 'product-catalog'>
+                    </button>
+                    <span>Каталог товаров</span>
+                </div>
             </div>
-            <button onclick="sending_files()">Отправить файлы</button>
+            <button type = 'button' onclick="sending_files()">Отправить файлы</button>
         </form>
     </main>
     <footer>

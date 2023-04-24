@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/loading.css">
+    <script src="../src/loading.js"></script>
+    <title>Выбор рекомендательной модели</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-main-space">
+            <h1>Выбор модели</h1>
+        </div>
+        <div class="username">
+           <span id = 'header-username-span'>username</span> 
+        </div>        
+    </header>
+
+    <main>
+        <form class = 'form_model_choose'>
+            <h3>Выберите параметры рекомендательной модели</h3>
+            <div class = 'form_inner_div'>
+             <p><input type="radio" name = 'model_type' value="user_based" id = "user_based">"User-based" - модель</p>
+             <p></p><input type="radio" name = 'model_type' value="item_based" id = "item_based">"Item-based" - модель</p>
+             <button onclick="model_confirm()">Подтвердить выбор модели</button>   
+            </div>
+        </form>
+        <a href=""></a>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
