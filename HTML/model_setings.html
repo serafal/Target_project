@@ -1,17 +1,18 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/loading.css">
-    <script src="../src/loading.js"></script>
-    <title>Выбор рекомендательной модели</title>
+    <link rel="stylesheet" href="../CSS/model_setings.css">
+    <script src="../src/model_setings.js"></script>
+    <title>Выбор настроек модели</title>
 </head>
 <body>
 
     <header>
         <div class="header-main-space">
-            <h1>Выбор модели</h1>
+            <h1>Выбор настроек</h1>
         </div>
         <div class="username">
            <span id = 'header-username-span'>username</span> 
@@ -19,15 +20,25 @@
     </header>
 
     <main>
-        <form class = 'form_model_choose'>
-            <h3>Выберите параметры рекомендательной модели</h3>
+            <form action="" class = 'form_model_choose'>
+            <h3>Выберите настройки модели</h3>
             <div class = 'form_inner_div'>
-             <p><input type="radio" name = 'model_type' value="user_based" id = "user_based">"User-based" - модель</p>
-             <p></p><input type="radio" name = 'model_type' value="item_based" id = "item_based">"Item-based" - модель</p>
-             <button onclick="model_confirm()">Подтвердить выбор модели</button>   
+                <div class="model_set_div">
+                    <span>Настройки типа модели</span>
+                    <p><input type="radio" name = 'model_set' value="VAE" id = "user_based">"VAE" - модель</p>
+                    <p><input type="radio" name = 'model_set' value="DAE" id = "item_based">"DAF" - модель</p>
+                    <p><input type="radio" name = 'model_set' value="NCF" id = "item_based">"NCF" - модель</p>
+                </div>
+                <div class="model_set_div">
+                    <span>Настройки товаров</span>
+                    <p><input type="radio" name = 'product_set' value="only_new" id = "user_based">Только новые товары</p>
+                    <p><input type="radio" name = 'product_set' value="only_buyed" id = "item_based">Только уже покупавшиеся товары</p>
+                    <p><input type="radio" name = 'product_set' value="all" id = "item_based">Все товары</p>
+                </div>   
             </div>
-        </form>
-        <a href=""></a>
+            <button type ="button" onclick="model_confirm()" class="green-button">Подтвердить выбор модели</button>
+            <a onclick="setings_trans()" class="green-button">Переход к следующей странице</a>
+            </form>     
     </main>
 
     <footer>

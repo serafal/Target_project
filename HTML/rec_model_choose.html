@@ -12,7 +12,7 @@
 
     <header>
         <div class="header-main-space">
-            <h1>Выбор модели</h1>
+            <h1>Тип модели</h1>
         </div>
         <div class="username">
            <span id = 'header-username-span'>username</span> 
@@ -20,15 +20,15 @@
     </header>
 
     <main>
-        <form class = 'form_model_choose'>
+            <form action="" class = 'form_model_choose'>
             <h3>Выберите параметры рекомендательной модели</h3>
             <div class = 'form_inner_div'>
              <p><input type="radio" name = 'model_type' value="user_based" id = "user_based">"User-based" - модель</p>
-             <p></p><input type="radio" name = 'model_type' value="item_based" id = "item_based">"Item-based" - модель</p>
-             <button onclick="model_confirm()">Подтвердить выбор модели</button>   
+             <p><input type="radio" name = 'model_type' value="item_based" id = "item_based">"Item-based" - модель</p>
+             <button type ="button" onclick="model_confirm()" class="green-button">Подтвердить выбор модели</button>   
             </div>
-        </form>
-        <a href=""></a>
+            <a onclick="setings_trans()" class="green-button">Переход к следующей странице</a>
+            </form>     
     </main>
 
     <footer>
