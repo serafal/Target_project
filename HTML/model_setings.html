@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/model_setings.css">
     <script src="../src/model_setings.js"></script>
-    <title>Выбор настроек модели</title>
+    <title>Ввод настроек модели</title>
 </head>
 <body>
 
     <header>
         <div class="header-main-space">
-            <h1>Выбор настроек</h1>
+            <h1>Ввод настроек</h1>
         </div>
         <div class="username">
            <span id = 'header-username-span'>username</span> 
@@ -21,23 +21,23 @@
 
     <main>
             <form action="" class = 'form_model_choose'>
-            <h3>Выберите настройки модели</h3>
+            <h3>Введите настройки модели (от 1 до 9)</h3>
             <div class = 'form_inner_div'>
                 <div class="model_set_div">
                     <span>Настройки типа модели</span>
-                    <p><input type="radio" name = 'model_set' value="VAE" id = "user_based">"VAE" - модель</p>
-                    <p><input type="radio" name = 'model_set' value="DAE" id = "item_based">"DAF" - модель</p>
-                    <p><input type="radio" name = 'model_set' value="NCF" id = "item_based">"NCF" - модель</p>
+                    <p><input type="radio" name = 'model_set' value="VAE" id = "vae">"VAE" - модель</p>
+                    <p><input type="radio" name = 'model_set' value="DAE" id = "dae">"DAF" - модель</p>
+                    <p><input type="radio" name = 'model_set' value="NCF" id = "ncf">"NCF" - модель</p>
                 </div>
                 <div class="model_set_div">
                     <span>Настройки товаров</span>
-                    <p><input type="radio" name = 'product_set' value="only_new" id = "user_based">Только новые товары</p>
-                    <p><input type="radio" name = 'product_set' value="only_buyed" id = "item_based">Только уже покупавшиеся товары</p>
-                    <p><input type="radio" name = 'product_set' value="all" id = "item_based">Все товары</p>
+                    <p><input type="radio" name = 'product_set' value="only_new" id = "only_new">Только новые товары</p>
+                    <p><input type="radio" name = 'product_set' value="only_buyed" id = "only_buyed">Только уже покупавшиеся товары</p>
+                    <p><input type="radio" name = 'product_set' value="all" id = "all">Все товары</p>
                 </div>   
             </div>
-            <button type ="button" onclick="model_confirm()" class="green-button">Подтвердить выбор модели</button>
-            <a onclick="setings_trans()" class="green-button">Переход к следующей странице</a>
+            <button type ="button" onclick="settings_confirm()" class="green-button" id="settings_confirm_butt">Ввести настройку модели</button>
+            <a onclick="next_page()" class="green-button" id="next_page_a">Переход к следующей странице</a>
             </form>     
     </main>
 

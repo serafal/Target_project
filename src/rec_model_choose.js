@@ -18,7 +18,7 @@ function model_confirm() {
      
 }
 
-function setings_trans() {
+function next_page() {
     if (model_confirm_point == true) { //Проверка подтверждения модели
         window.location.href = 'model_setings.html';
     } else {

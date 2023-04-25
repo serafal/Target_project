@@ -55,7 +55,7 @@ main {
         flex-direction: column;
         align-items: center;
         width: 800px;
-        height: 400px;
+        height: 550px;
         border: 2px solid rgb(187, 187, 187);
         border-radius: 20px;
         background-color: white;   
@@ -82,7 +82,7 @@ font-weight: bold;
 }
 
 
-.loading-files button {
+.green-button {
     display: flex;
     font-size: 18px;
     padding: 15px;
@@ -96,11 +96,11 @@ font-weight: bold;
     margin-top: 50px;
 }
 
-.loading-files button:hover {
+.green-button:hover {
     background-color: #11eb11;
 }
 
-.loading-files button:active{
+.green-button:active{
     background-color: #2b974b;
 }
 

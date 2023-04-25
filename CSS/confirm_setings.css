@@ -13,7 +13,7 @@ header {
 
 header .header-main-space {
     border-radius: 0px 0px 45px 45px;
-    width: 472px;
+    width: 772px;
     text-align: center;
     white-space: nowrap;
     background-color: white;
@@ -23,8 +23,8 @@ header .header-main-space {
 }
 
 header .username {
- padding-left: 3%;
- padding-right: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
  padding-top: 30px;
  background-color: aliceblue;
  border-radius: 45px 0px 45px 0px;
@@ -55,7 +55,7 @@ main {
         flex-direction: column;
         align-items: center;
         width: 800px;
-        height: 550px;
+        height: 1000px;
         border: 2px solid rgb(187, 187, 187);
         border-radius: 20px;
         background-color: white;   
@@ -68,7 +68,7 @@ main {
     }
 
     .model_set_div {
-        width: 40%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;

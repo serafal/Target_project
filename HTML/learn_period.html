@@ -1,17 +1,18 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/loading.css">
-    <script src="../src/loading.js"></script>
-    <title>Выбор рекомендательной модели</title>
+    <link rel="stylesheet" href="../CSS/learn-period.css">
+    <script src="../src/learn-period.js"></script>
+    <title>Ввод периода обучения и валидации</title>
 </head>
 <body>
 
     <header>
         <div class="header-main-space">
-            <h1>Выбор модели</h1>
+            <h1>Ввод периода обучения и валидации</h1>
         </div>
         <div class="username">
            <span id = 'header-username-span'>username</span> 
@@ -19,15 +20,27 @@
     </header>
 
     <main>
-        <form action="" class = 'form_model_choose'>
-            <h3>Выберите параметры рекомендательной модели</h3>
+            <form action="" class = 'form_model_choose'>
+            <h3>Выберите период обучения и валидации</h3>
             <div class = 'form_inner_div'>
-             <p><input type="radio" name = 'model_type' value="user_based" id = "user_based">"User-based" - модель</p>
-             <p></p><input type="radio" name = 'model_type' value="item_based" id = "item_based">"Item-based" - модель</p>
-             <button onclick="model_confirm()">Подтвердить выбор модели</button>   
+                <div class="model_set_div">
+                    <span>Выбор периода обучения </span>
+                    <p>Дата начала обучения</p>
+                    <input type="date" name = 'learn_start' id = "learn_start" value="">
+                    <p>Дата конца обучения</p>
+                    <input type="date" name = 'learn_end' id = "learn_end" value="">
+                </div>
+                <div class="model_set_div">
+                    <span>Выбор периода валидации</span>
+                    <p>Дата начала валидации</p>
+                    <input type="date" name = 'valid_start' id = "valid_start" value="">
+                    <p>Дата конца валидации</p>
+                    <input type="date" name = 'valid_end' id = "valid_end" value="">
+                </div>   
             </div>
-        </form>
-        <a href=""></a>
+            <button type ="button" onclick="settings_confirm()" class="green-button" id="settings_confirm_butt">Ввести периоды обучения и валидации</button>
+            <a onclick="next_page()" class="green-button" id="next_page_a">Переход к следующей странице</a>
+            </form>     
     </main>
 
     <footer>

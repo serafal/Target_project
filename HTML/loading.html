@@ -23,19 +23,20 @@
             <h3>Пожалуйста, загрузите файлы: История покупок; Каталог товаров.</h3>
             <div class="loading-buttons">
                 <div>
-                    <button>
+                    <button class="green-button">
                         <input type="file" id = 'purchase-history'>
                     </button>
                     <span>История покупок</span>
                 </div>
                 <div>
-                    <button>
+                    <button class="green-button">
                         <input type="file" id = 'product-catalog'>
                     </button>
                     <span>Каталог товаров</span>
                 </div>
             </div>
-            <button type = 'button' onclick="sending_files()">Отправить файлы</button>
+            <button type = 'button' onclick="sending_files()" class="green-button">Отправить файлы</button>
+            <a onclick="next_page()" class="green-button" id="next_page_a">Переход к следующей странице</a>
         </form>
     </main>
     <footer>
