@@ -15,7 +15,7 @@
             <h1>Подтверждение параметров</h1>
         </div>
         <div class="username">
-           <span id = 'header-username-span'>username</span> 
+           <span id = 'header-username-span'>admin</span> 
         </div>        
     </header>
 
@@ -29,12 +29,12 @@
                 </div>
                 <div class="model_set_div">
                     <span>База модели</span>
-                    <p id = "model-base">user-based</p>
+                    <p id = "model_base">user-based</p>
                 </div>
-                <div class="model_set_div">
+                <div class="model_set_div" id = "model_and_product">
                     <span>Настройки модели</span>
-                    <p id = "model-type">VAE</p>
-                    <p id = "product-type">Все товары</p>
+                    <p id = "model_type">VAE</p>
+                    <p id = "product_type">Все товары</p>
                 </div>
             </div>   
         </div>
@@ -42,20 +42,21 @@
             <div class="model_set_div">
                 <span>Период обучения </span>
                 <p>Дата начала обучения</p>
-                <input type="date" name = 'learn_start' id = "learn_start" value="">
+                <input type="date" name = 'learn_start' id = "learn_start" value="" disabled>
                 <p>Дата конца обучения</p>
-                <input type="date" name = 'learn_end' id = "learn_end" value="">
+                <input type="date" name = 'learn_end' id = "learn_end" value="" disabled>
             </div>
             <div class="model_set_div">
                 <span>Период валидации</span>
                 <p>Дата начала валидации</p>
-                <input type="date" name = 'valid_start' id = "valid_start" value="">
+                <input type="date" name = 'valid_start' id = "valid_start" value="" disabled>
                 <p>Дата конца валидации</p>
-                <input type="date" name = 'valid_end' id = "valid_end" value="">
+                <input type="date" name = 'valid_end' id = "valid_end" value="" disabled>
             </div>   
         </div>
         <button type ="button" onclick="settings_confirm()" class="green-button" id="settings_confirm_butt">Отправить на рассчёт</button>
-        </form>     
+        </form> 
+        <script src="../scripts/setEnteredData.js"></script>    
     </main>
 
     <footer>
