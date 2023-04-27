@@ -11,8 +11,10 @@ function model_confirm() {
     if (user_set !== true && item_set !== true) { /*Проверка выбора модели*/
     console.log(model_confirm_point);
        return alert ('Не выбран тип модели');
-    } else {
-        alert ('Тип модели выбран');
+    } else { //Если модель выбрана - смотрим какая и сохраняем в local
+      let model_base = ((user_set == true) ? "user_based" : "item_based")
+      localStorage.setItem("model_base", model_base)  
+      alert ('Тип модели сохранён');
       return model_confirm_point = true;
     }
      

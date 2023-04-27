@@ -26,17 +26,18 @@
                 <div class="model_set_div">
                     <span>Выбор периода обучения </span>
                     <p>Дата начала обучения</p>
-                    <input type="date" name = 'learn_start' id = "learn_start" value="">
+                    <input type="date" name = 'learn' id = "learn_start" value="" min = "" onchange="learn_start_change()">
                     <p>Дата конца обучения</p>
-                    <input type="date" name = 'learn_end' id = "learn_end" value="">
+                    <input type="date" name = 'learn' id = "learn_end" value="" min = "" onchange="learn_end_change()" disabled = "disabled">
                 </div>
                 <div class="model_set_div">
                     <span>Выбор периода валидации</span>
                     <p>Дата начала валидации</p>
-                    <input type="date" name = 'valid_start' id = "valid_start" value="">
+                    <input type="date" name = 'valid' id = "valid_start" value="" min = "" onchange="valid_start_change()" disabled = "disabled">
                     <p>Дата конца валидации</p>
-                    <input type="date" name = 'valid_end' id = "valid_end" value="">
+                    <input type="date" name = 'valid' id = "valid_end" value="" min = "" onchange="valid_end_change()" disabled = "disabled">
                 </div>   
+                <script src="../scripts/setNowDate.js"></script>
             </div>
             <button type ="button" onclick="settings_confirm()" class="green-button" id="settings_confirm_butt">Ввести периоды обучения и валидации</button>
             <a onclick="next_page()" class="green-button" id="next_page_a">Переход к следующей странице</a>
